@@ -9,7 +9,7 @@
 			<link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
 			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 			<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
-			<link rel="stylesheet" type="text/css" href="assets/styles/crisp.css?v=bb08a3df6f">
+			<link rel="stylesheet" type="text/css" href="../assets/styles/crisp.css?v=bb08a3df6f">
 	    <meta name="HandheldFriendly" content="True">
 	    <meta name="MobileOptimized" content="320">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
 				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 				<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 			<![endif]-->  
-				<link rel="stylesheet" type="text/css" href="assets/styles/rrssb.css?v=bb08a3df6f">
+				<link rel="stylesheet" type="text/css" href="../assets/styles/rrssb.css?v=bb08a3df6f">
 	<meta property="og:title" content="how fast does miles teller play in whiplash?">
 	<meta property="og:type" content="article">
 	<meta property="og:description" content="Released at the end of 2004, Whiplash focuses on a promosing young drummer (Miles Teller) poursuying his  dreams of greatness. This greatness will only be achieved with the help of a ruthless teacher (J. K. Simmons) that will push him to his limits. Obviously classic but I strongly recommend the...">
@@ -97,7 +97,7 @@
 			<!-- <h6><a href="http://iwoaf.com/about">About</a></h6> -->		</header>
 		<main id="content">
 			<article id="2" class="post tag-movie featured">
-	<div class="post-stamp">March 28, 2015<span class="taglist"> · <a href="tag/movie/">movie</a></span><span class="separator"> · </span><i class="fa fa-star-o feature-star"></i></div>
+	<div class="post-stamp">March 28, 2015<span class="taglist"> · <a href="../tag/movie/">movie</a></span><span class="separator"> · </span><i class="fa fa-star-o feature-star"></i></div>
 	<h1 class="post-title">how fast does miles teller play in whiplash?</h1>
 	<div class="video-container">  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0IzlhHz6UKg" frameborder="0" allowfullscreen></iframe>  
@@ -109,26 +109,26 @@
 
 <p>The metric used is the Beat Per Minutes (BPM) which, in the case of the drum, simplified to how many times the drummer hits his instrument per minutes. This BPM is estimated by the detection of a short transcient peaks in the audio signal then the difference of time between two consecutive peaks allows the computation of the <em>instantaneous BPM</em>. The two following figures shows the basic idea and problem behind the detection of these short peaks (beat) in an audio signal. The red dots represents a detection and the numbers between two consecutive dots are the <em>instantaneous BPM</em>. The first figure is an example of clear identifiable beats with an slightly increasing BPM (311 - 323 - 336 - 361 - ...). However the the second example exhibits the problem that arises when beats are pretty closed to each others leading to the end of a beat signal interfering with the beginning of the next one. So it makes the estimation of the <em>instantaneous BPM</em> harder and thus more noisy.</p>
 
-<p><img src="content/images/2015/03/beat-detect-low.png" alt="xwf">
-<img src="content/images/2015/03/beat-detect-high.png" alt="wfkj"></p>
+<p><img src="../content/images/2015/03/beat-detect-low.png" alt="xwf">
+<img src="../content/images/2015/03/beat-detect-high.png" alt="wfkj"></p>
 
 <p>Now let's see how the Miles performs in the first see of the movie. The x-axis is the number of the beats. For the first scene, around ~200 beats were detected. For those who haven't seen the movie, in the first scene Miles starts playing and slowly accelerate the rythm. The acceleration is clearl on the graph, he starts with less that 100 beats per minutes and ends with ~900 beats per minutes.</p>
 
-<p><img src="content/images/2015/03/bpm-whiplash-beginb-1.png" alt="whiplash-bpm-first-scene"></p>
+<p><img src="../content/images/2015/03/bpm-whiplash-beginb-1.png" alt="whiplash-bpm-first-scene"></p>
 
 <p>The BPM of the final scene has also been studied (from 2:36 to 3:56 of the embedded video). On this scene, the algorithm probably missed few drum beats as even if Miles Teller is at his higher beat rate (end of the graph) some <em>instantaneous BPM</em> appears to be around 450 quite precisely half of what the other points concentrate at that moment (between 800 and 1000). I like how the evolution of the <em>instantaneous BPM</em> draws a V shape, with a regular decrease then an as regular increase. So to answer the title-question "how fast does miles teller play in whiplash?", I will answer with <strong>900 BPM</strong> (±25).</p>
 
-<p><img src="content/images/2015/03/bpm-whiplash-end-1.png" alt="whiplash-bpm-last-scene"></p>
+<p><img src="../content/images/2015/03/bpm-whiplash-end-1.png" alt="whiplash-bpm-last-scene"></p>
 
 <p>Trully fast in my opinion. But let's compared it with the actual world's fastest drummer. I confronte the beat detection algorithm to the known world record of 1208 beat in one minute <a href="https://www.youtube.com/watch?v=Q9FrW-Wr-ds">video of the record</a>. The algorithm detects <strong>1211</strong> beats instead of <strong>1208</strong> !  The <em>instantaneous BPM</em> of this record is of interest as we see that the drummer varies between 1000 and 1700 over the whole one minute of the drum session. We might account this variation to both the algorithm and the drummer himself. However, he seems incredibly constant even if a linear regression tells us that he starts with a <em>instantaneous BPM</em> of <strong>1282</strong> (±26) and finishes with <strong>1193</strong> (±26).</p>
 
-<p><img src="content/images/2015/03/bpm-wfd-1.png" alt="world-fastest-drummer-bpm"></p>
+<p><img src="../content/images/2015/03/bpm-wfd-1.png" alt="world-fastest-drummer-bpm"></p>
 
 <p>And finally, let's look at the BPM of the <a href="https://www.youtube.com/watch?v=ZpknwYRp7uY">challenge</a> given by the World's Fastest Drummer to Miles Teller. He seems to rise up to <strong>1100</strong> BPM.</p>
 
 <p>But as Miles <a href="http://radio.com/2015/03/13/miles-teller-worlds-fastest-drummer-response/">said</a> “Why would you challenge a guy who played in some garage bands in Florida and has a fun time doing it? I don’t go for speed. It’s not a sprint for the Miles man.”</p>
 
-<p><img src="content/images/2015/03/bpm-wfdchallenge.png" alt="world-fastest-drummer-bpm-challenge"></p>
+<p><img src="../content/images/2015/03/bpm-wfdchallenge.png" alt="world-fastest-drummer-bpm-challenge"></p>
 
 <p>The code and the waveform are available here!</p>
 	<div id="social-bar">
@@ -243,7 +243,7 @@
   </ul>	
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="assets/js/rrssb.min.js?v=bb08a3df6f"></script>
+<script src="../assets/js/rrssb.min.js?v=bb08a3df6f"></script>
   <div id="comments">
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">
@@ -266,7 +266,7 @@
 				<img border="0" alt="ghost" src="http://iwoaf.com/how-fast-does-miles-teller-play-in-whiplash/content/images/touch-icon-iphone.png" width="10" height="10">
 			  </a>, with a beautiful theme by <a href="http://kathyqian.com" target="_blank">Kathy Qian</a>.</section>
 		</footer>
-	<script src="public/jquery.js?v=bb08a3df6f"></script>
+	<script src="../public/jquery.js?v=bb08a3df6f"></script>
 <script src="http://iwoaf.com/how-fast-does-miles-teller-play-in-whiplash/assets/js/jquery.js?v=d745b4d3c8"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
     <script type="text/javascript" src="http://iwoaf.com/how-fast-does-miles-teller-play-in-whiplash/assets/js/prism.js?v=d745b4d3c8"></script>
