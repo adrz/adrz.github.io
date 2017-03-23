@@ -35,7 +35,7 @@ function plot(json, size){
 function get_dataset(){
     var dataset = window.location.search.substr(1);
     if ({ portrait: 1, landscape: 1}[dataset] !== 1){
-        dataset = 'x';
+        dataset = 'x2';
     }
     return "datasets/" + dataset + ".json";
 }
