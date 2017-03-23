@@ -1,7 +1,7 @@
 function plot(json, size){
     var svg = d3.select("body").append("svg")
-        .attr("width", 800)
-        .attr("height", 720);
+        .attr("width", 700)
+        .attr("height", 600);
     var img = d3.select('body').append('img')
         .attr('id', 'current_img');
 
