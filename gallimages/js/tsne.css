@@ -4,7 +4,15 @@
   top: 5px;
 }
 
+#current_img2 {
+  position: absolute;
+  right:5px;
+  top: 5px;
+}
+
 svg {
   background: #fff;
   border: 1px solid #666;
 }
+
+

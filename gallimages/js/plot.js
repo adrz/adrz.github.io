@@ -1,9 +1,15 @@
 function plot(json, size){
+
+    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
     var svg = d3.select("body").append("svg")
-        .attr("width", 700)
-        .attr("height", 600);
-    var img = d3.select('body').append('img')
-        .attr('id', 'current_img');
+        .attr("width", w/2-10)
+        .attr("height", (w/2-10)*2/3);
+    var img = d3.select('body')
+        .append("img")
+        .attr('id', 'current_img')
+        .attr('width', w/3-10);
+
 
     svg.append('g').selectAll('.myPoint')
         .data(json)
@@ -32,22 +38,29 @@ function plot(json, size){
     });
 }
 
+function updateWindow(){
+   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+   d3.select("svg")
+        .attr("width", w/2-10)
+        .attr("height", (w/2-10)*2/3);
+   d3.select('img')
+        .attr('id', 'current_img')
+        .attr('width', w/3-10);
+}
+window.onresize = updateWindow;
+
 function get_dataset(){
     var dataset = window.location.search.substr(1);
-    if ({ portrait: 1, landscape: 1}[dataset] !== 1){
-        dataset = 'x2';
-    }
+    // if ({ portrait: 1, landscape: 1}[dataset] !== 1){
+    //     dataset = 'x_pca_50_per_100';
+    // }
+    // dataset = 'x_pca_50_per_100'
     return "datasets/" + dataset + ".json";
 }
 
 function get_size(){
     var dataset = window.location.search.substr(1);
-    var lut = {
-        portrait: [32, 50],
-        landscape: [50, 32],
-        square: [40, 40]
-    };
-    return lut[dataset] || lut['square'];
+    return [40, 40];
 }
 
 d3.json(get_dataset(), function(error, json) {
