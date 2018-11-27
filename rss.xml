@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[i was once again flabbergasted]]></title><description><![CDATA[a modest attempt at data understanding and visualization]]></description><link>http://0.0.0.0:2368/</link><generator>Ghost 0.10</generator><lastBuildDate>Tue, 27 Nov 2018 09:45:07 GMT</lastBuildDate><atom:link href="http://0.0.0.0:2368/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[finding similar movie posters with ConvNet (deep-learning)]]></title><description><![CDATA[Movie posters often exhibit strange and obvious similarities. Due to this observation, I wondered if the powerful ConvNets (Convolutional Neural Network) would be able to cluster]]></description><link>http://0.0.0.0:2368/finding-similar-movie-posters-with-convnet-deep-learning/</link><guid isPermaLink="false">13b96f1a-5a42-4c76-a3b0-3784bcd54849</guid><category><![CDATA[movie]]></category><category><![CDATA[deeplearning]]></category><category><![CDATA[convnet]]></category><category><![CDATA[posters]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Mon, 26 Nov 2018 15:35:24 GMT</pubDate><content:encoded><![CDATA[<h1 id="introduction">Introduction</h1>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[i was once again flabbergasted]]></title><description><![CDATA[a modest attempt at data understanding and visualization]]></description><link>http://iwoaf.com/</link><generator>Ghost 0.10</generator><lastBuildDate>Tue, 27 Nov 2018 09:45:07 GMT</lastBuildDate><atom:link href="http://iwoaf.com/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[finding similar movie posters with ConvNet (deep-learning)]]></title><description><![CDATA[Movie posters often exhibit strange and obvious similarities. Due to this observation, I wondered if the powerful ConvNets (Convolutional Neural Network) would be able to cluster]]></description><link>http://iwoaf.com/finding-similar-movie-posters-with-convnet-deep-learning/</link><guid isPermaLink="false">13b96f1a-5a42-4c76-a3b0-3784bcd54849</guid><category><![CDATA[movie]]></category><category><![CDATA[deeplearning]]></category><category><![CDATA[convnet]]></category><category><![CDATA[posters]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Mon, 26 Nov 2018 15:35:24 GMT</pubDate><content:encoded><![CDATA[<h1 id="introduction">Introduction</h1>
 
 <p>Movie posters often exhibit strange and obvious similarities. Christophe Courtois has <a href="https://afficheschristophecourtois.blogspot.fr/">an awesome blog</a> discussing this particularity of Hollywood posters.</p>
 
@@ -48,7 +48,7 @@
 <p>The the last option was used in order to find similar movie posters. More precisely, the <a href="https://arxiv.org/pdf/1409.1556.pdf">VGG-19</a> <a href="https://github.com/fchollet/deep-learning-models">pre-trained</a> ConvNet, from which the classifier layers have been removed, allows to convert the image of a movie poster into a feature vector.</p>
 
 <p><center> <br>
-<img src="http://0.0.0.0:2368/content/images/2017/04/vgg16.png" alt="VGG-16"></center></p>
+<img src="http://iwoaf.com/content/images/2017/04/vgg16.png" alt="VGG-16"></center></p>
 
 <p>VGG-16 architecture (really similar to VGG-19 that only has 3 more convolutional layers) <a href="https://blog.heuritech.com/2016/02/29/a-brief-report-of-the-heuritech-deep-learning-meetup-5/">source</a> <br>
 </p>
@@ -69,43 +69,43 @@ Another distance (similarity to be more precise) called <a href="http://blog.chr
 
 <h3 id="5mostsimilarmoviepostersoffrightnightpartii30components">5 most similar movie posters of Fright Night Part II (30 components):</h3>
 
-<p><img src="http://0.0.0.0:2368/content/images/2017/04/9758_30-1.jpg" alt="pca 30"></p>
+<p><img src="http://iwoaf.com/content/images/2017/04/9758_30-1.jpg" alt="pca 30"></p>
 
 <h3 id="5mostsimilarmoviepostersoffrightnightpartii500components">5 most similar movie posters of Fright Night Part II (500 components):</h3>
 
-<p><img src="http://0.0.0.0:2368/content/images/2017/04/9758_500.jpg" alt="pca 500"></p>
+<p><img src="http://iwoaf.com/content/images/2017/04/9758_500.jpg" alt="pca 500"></p>
 
 <h3 id="5mostsimilarmoviepostersoffrightnightpartii5000components">5 most similar movie posters of Fright Night Part II (5000 components):</h3>
 
-<p><img src="http://0.0.0.0:2368/content/images/2017/04/9758_5000.jpg" alt="pca 500"></p>
+<p><img src="http://iwoaf.com/content/images/2017/04/9758_5000.jpg" alt="pca 500"></p>
 
 <p>The above concatenations of the 5th closest movie posters for Fright Night Part II exhibit the limitation of choosing a too strong PCA reduction. I have the feeling that the main characteristic of Fright Night Part II is the clearly visible eyes with an almost not visible face. Both a reduction of 500 or 5000 tend to catch this, with a small advantage for the 5000 in my opinion.</p>
 
 <h3 id="similarmoviepostersfortheassignment30components">Similar movie posters for The Assignment (30 components):</h3>
 
-<p><img src="http://0.0.0.0:2368/content/images/2017/04/12450_30.jpg" alt="pca 30"></p>
+<p><img src="http://iwoaf.com/content/images/2017/04/12450_30.jpg" alt="pca 30"></p>
 
 <h3 id="similarmoviepostersfortheassignment500components">Similar movie posters for The Assignment (500 components):</h3>
 
-<p><img src="http://0.0.0.0:2368/content/images/2017/04/12450_500.jpg" alt="pca 500"></p>
+<p><img src="http://iwoaf.com/content/images/2017/04/12450_500.jpg" alt="pca 500"></p>
 
 <h3 id="similarmoviepostersfortheassignment5000components"> Similar movie posters for The Assignment (5000 components):</h3>
 
-<p><img src="http://0.0.0.0:2368/content/images/2017/04/12450_5000.jpg" alt="pca 500"></p>
+<p><img src="http://iwoaf.com/content/images/2017/04/12450_5000.jpg" alt="pca 500"></p>
 
 <p>Here The Assignment poster is mostly black with a sunset and some black shadows. It seems that the reduction to 30 components only catches the darkish theme of the poster. In the other hand, the reduction to 5000 focuses too much on the shade of the shadow this is why GlenGarry Glen Gloss or The Heart of the Game (which is not so close to The Assignment poster in my opinion).</p>
 
 <h3 id="similarmoviepostersforrunningwithscissors500components">Similar movie posters for Running with Scissors (500 components):</h3>
 
-<p><img src="http://0.0.0.0:2368/content/images/2017/04/19449_30.jpg" alt="pca 30"></p>
+<p><img src="http://iwoaf.com/content/images/2017/04/19449_30.jpg" alt="pca 30"></p>
 
 <h3 id="similarmoviepostersforrunningwithscissors500components">Similar movie posters for Running with Scissors (500 components):</h3>
 
-<p><img src="http://0.0.0.0:2368/content/images/2017/04/19449_500.jpg" alt="pca 500"></p>
+<p><img src="http://iwoaf.com/content/images/2017/04/19449_500.jpg" alt="pca 500"></p>
 
 <h3 id="similarmoviepostersforrunningwithscissors5000components"> Similar movie posters for Running with Scissors (5000 components)</h3>
 
-<p><img src="http://0.0.0.0:2368/content/images/2017/04/19449_5000.jpg" alt="pca 500"></p>
+<p><img src="http://iwoaf.com/content/images/2017/04/19449_5000.jpg" alt="pca 500"></p>
 
 <p>In case where the posters are ''simple'' a lack of reduction seems to made the similarity focus on a specific details. Clearly, the ConvNet have definitely recognize the hand of the Running with Scissors' poster and this feature has a huge impact. Here the algorithm seemed focused on this closed hand and try no matter what the general colors of the poster to match Running with Scissors with posters with hands in it.</p>
 
@@ -121,33 +121,33 @@ Another distance (similarity to be more precise) called <a href="http://blog.chr
   <p>(...) is a nonlinear dimensionality reduction technique that is particularly well-suited for embedding high-dimensional data into a space of two or three dimensions, which can then be visualized in a scatter plot. Specifically, it models each high-dimensional object by a two- or three-dimensional point in such a way that similar objects are modeled by nearby points and dissimilar objects are modeled by distant points.</p>
 </blockquote>
 
-<p>Randomly picked 2000 posters from the datasets and you get this <a href="http://0.0.0.0:2368/finding-similar-movie-posters-with-convnet-deep-learning/">visualization of similar movie posters</a>.</p>
+<p>Randomly picked 2000 posters from the datasets and you get this <a href="http://iwoaf.com/finding-similar-movie-posters-with-convnet-deep-learning/">visualization of similar movie posters</a>.</p>
 
 <h1 id="somecherrypikingresults">Some cherry-piking results</h1>
 
 <h3 id="similarmoviepostersfortruman2015">Similar movie posters for Truman (2015):</h3>
 
-<p><img src="http://0.0.0.0:2368/content/images/2017/04/17442_500.jpg" alt=""></p>
+<p><img src="http://iwoaf.com/content/images/2017/04/17442_500.jpg" alt=""></p>
 
 <h3 id="similarmoviepostersforlookingforkitty2004">Similar movie posters for Looking for Kitty (2004):</h3>
 
-<p><img src="http://0.0.0.0:2368/content/images/2017/04/19131_500-1.jpg" alt=""></p>
+<p><img src="http://iwoaf.com/content/images/2017/04/19131_500-1.jpg" alt=""></p>
 
 <h3 id="similarmoviepostersforthefounders2016">Similar movie posters for The Founders (2016):</h3>
 
-<p><img src="http://0.0.0.0:2368/content/images/2017/04/36673_500.jpg" alt=""></p>
+<p><img src="http://iwoaf.com/content/images/2017/04/36673_500.jpg" alt=""></p>
 
 <h3 id="similarmoviepostersforrocknrollhighschool1979">Similar movie posters for Rock'n'Roll High School (1979):**</h3>
 
-<p><img src="http://0.0.0.0:2368/content/images/2017/04/7135_500.jpg" alt=""></p>
+<p><img src="http://iwoaf.com/content/images/2017/04/7135_500.jpg" alt=""></p>
 
 <h3 id="similarmoviepostersforunderworldevolution2006">Similar movie posters for Underworld: Evolution (2006):</h3>
 
-<p><img src="http://0.0.0.0:2368/content/images/2017/04/19709_500.jpg" alt=""></p>
+<p><img src="http://iwoaf.com/content/images/2017/04/19709_500.jpg" alt=""></p>
 
 <h3 id="similarmoviepostersforthecuriouscaseofbenjaminbutton2008">Similar movie posters for The Curious Case of Benjamin Button (2008):**</h3>
 
-<p><img src="http://0.0.0.0:2368/content/images/2017/04/21649_500.jpg" alt=""></p>
+<p><img src="http://iwoaf.com/content/images/2017/04/21649_500.jpg" alt=""></p>
 
 <p><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"></p>
 
@@ -170,20 +170,20 @@ The code of the project is available on <a href="https://github.com/aDrz/movie-p
 <p><link rel="stylesheet" href="//cdn.rawgit.com/adrz/movie-posters-convnet/master/web/js/milligram_perso.css"></p>]]></content:encoded></item><item><title><![CDATA[politics]]></title><description><![CDATA[<div>  
     <a href="https://plot.ly/~adrz/0/?share_key=LjvCdgARaav5P6Izvv2Bc6" target="_blank" title="Twitter Politique" style="display: block; text-align: center;"><img src="https://plot.ly/~adrz/0.png?share_key=LjvCdgARaav5P6Izvv2Bc6" alt="Twitter Politique" style="max-width: 100%;width: 1274px;" width="1274" onerror="this.onerror=null;this.src='https://plot.ly/404.png';"></a>
     <script data-plotly="adrz:0" sharekey-plotly="LjvCdgARaav5P6Izvv2Bc6" src="https://plot.ly/embed.js" async></script>
-</div>]]></description><link>http://0.0.0.0:2368/politics/</link><guid isPermaLink="false">0345290c-2af9-49ca-9730-cf3ee91bd681</guid><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Thu, 15 Sep 2016 09:40:17 GMT</pubDate><content:encoded><![CDATA[<div>  
+</div>]]></description><link>http://iwoaf.com/politics/</link><guid isPermaLink="false">0345290c-2af9-49ca-9730-cf3ee91bd681</guid><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Thu, 15 Sep 2016 09:40:17 GMT</pubDate><content:encoded><![CDATA[<div>  
     <a href="https://plot.ly/~adrz/0/?share_key=LjvCdgARaav5P6Izvv2Bc6" target="_blank" title="Twitter Politique" style="display: block; text-align: center;"><img src="https://plot.ly/~adrz/0.png?share_key=LjvCdgARaav5P6Izvv2Bc6" alt="Twitter Politique" style="max-width: 100%;width: 1274px;" width="1274" onerror="this.onerror=null;this.src='https://plot.ly/404.png';"></a>
     <script data-plotly="adrz:0" sharekey-plotly="LjvCdgARaav5P6Izvv2Bc6" src="https://plot.ly/embed.js" async></script>
-</div>]]></content:encoded></item><item><title><![CDATA[Visualizing Clusters of Clickbait Headlines Using Spark, Word2vec, and Plotly]]></title><description><![CDATA[<p><a href="http://minimaxir.com/2016/08/clickbait-cluster/">http://minimaxir.com/2016/08/clickbait-cluster/</a></p>]]></description><link>http://0.0.0.0:2368/visualizing-clusters-of-clickbait-headlines-using-spark-word2vec-and-plotly/</link><guid isPermaLink="false">8bfba306-9379-455b-8983-7041c4a0d2ca</guid><category><![CDATA[external]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Wed, 14 Sep 2016 16:13:51 GMT</pubDate><content:encoded><![CDATA[<p><a href="http://minimaxir.com/2016/08/clickbait-cluster/">http://minimaxir.com/2016/08/clickbait-cluster/</a></p>]]></content:encoded></item><item><title><![CDATA[the data of long distance lovers]]></title><description><![CDATA[<p>It is a truism to say that relationship is hard to maintain. It might be even more difficult when the Atlantic Ocean separates them. But thanks to internet and those <em>big data</em> companies that feed themselves with our personal informations, we can now have a <em>real</em> relationship even with 5,</p>]]></description><link>http://0.0.0.0:2368/data-of-long-distance-lovers/</link><guid isPermaLink="false">f4ef5798-0388-4dae-a238-74b3eb0cfa4c</guid><category><![CDATA[textmining]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Tue, 25 Aug 2015 12:35:11 GMT</pubDate><content:encoded><![CDATA[<p>It is a truism to say that relationship is hard to maintain. It might be even more difficult when the Atlantic Ocean separates them. But thanks to internet and those <em>big data</em> companies that feed themselves with our personal informations, we can now have a <em>real</em> relationship even with 5,500 km between us. Real in sense of small talks, common projects, and fights... Only the means differ from the conventional relations as the acoustic vibration produced by the mouth is replaced by 0s and 1s traveling through transoceanic cables.</p>
+</div>]]></content:encoded></item><item><title><![CDATA[Visualizing Clusters of Clickbait Headlines Using Spark, Word2vec, and Plotly]]></title><description><![CDATA[<p><a href="http://minimaxir.com/2016/08/clickbait-cluster/">http://minimaxir.com/2016/08/clickbait-cluster/</a></p>]]></description><link>http://iwoaf.com/visualizing-clusters-of-clickbait-headlines-using-spark-word2vec-and-plotly/</link><guid isPermaLink="false">8bfba306-9379-455b-8983-7041c4a0d2ca</guid><category><![CDATA[external]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Wed, 14 Sep 2016 16:13:51 GMT</pubDate><content:encoded><![CDATA[<p><a href="http://minimaxir.com/2016/08/clickbait-cluster/">http://minimaxir.com/2016/08/clickbait-cluster/</a></p>]]></content:encoded></item><item><title><![CDATA[the data of long distance lovers]]></title><description><![CDATA[<p>It is a truism to say that relationship is hard to maintain. It might be even more difficult when the Atlantic Ocean separates them. But thanks to internet and those <em>big data</em> companies that feed themselves with our personal informations, we can now have a <em>real</em> relationship even with 5,</p>]]></description><link>http://iwoaf.com/data-of-long-distance-lovers/</link><guid isPermaLink="false">f4ef5798-0388-4dae-a238-74b3eb0cfa4c</guid><category><![CDATA[textmining]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Tue, 25 Aug 2015 12:35:11 GMT</pubDate><content:encoded><![CDATA[<p>It is a truism to say that relationship is hard to maintain. It might be even more difficult when the Atlantic Ocean separates them. But thanks to internet and those <em>big data</em> companies that feed themselves with our personal informations, we can now have a <em>real</em> relationship even with 5,500 km between us. Real in sense of small talks, common projects, and fights... Only the means differ from the conventional relations as the acoustic vibration produced by the mouth is replaced by 0s and 1s traveling through transoceanic cables.</p>
 
 <p>To illustrate this point, here some analysis of our daily discussions through the phone app <a href="http://www.viber.com/">viber</a>. Viber allows their users to get a nice and well formatted csv file containing the date, the sender, and the content of each message. So here's a few graphs that summarize it.</p>
 
-<p><img src="http://0.0.0.0:2368/content/images/2015/08/nb_msg.png" alt="number of messages"></p>
+<p><img src="http://iwoaf.com/content/images/2015/08/nb_msg.png" alt="number of messages"></p>
 
 <p>The log hold slight more than a year of data and exactly 20,846 messages, <strong>she</strong> is responsible for 51.2% of the total. The proportion of sent messages is decently equivalent even if <strong>he</strong> has sent 520 less of them.  Let's state that it is due to the more talkative characteristic of the girls in general...</p>
 
 <p>It is interesting to continue the comparison between <strong>Her</strong> and <strong>Him</strong> with a focus on the time taken to respond to a message.</p>
 
-<p><img src="http://0.0.0.0:2368/content/images/2015/08/time_to_answer-2.png" alt="time to answer a message"></p>
+<p><img src="http://iwoaf.com/content/images/2015/08/time_to_answer-2.png" alt="time to answer a message"></p>
 
 <p>I like the previous graph that shows that more than 60% of messages from <strong>Her</strong> and <strong>Him</strong> are answered within 2 minutes. However, we see that <strong>he</strong> has the tendency to let her wait more ! even up to more that 8 hours. The explanation to this trend is that most of this long answers are due to message sent during <strong>his</strong> night. </p>
 
@@ -216,34 +216,34 @@ The code of the project is available on <a href="https://github.com/aDrz/movie-p
 
 <p>Comparison is no longer needed as the viber log is common and loving conversation between two persons ! So let's talk about the global statistics of this one year apart exchanged messages.</p>
 
-<p><img src="http://0.0.0.0:2368/content/images/2015/08/n_char-3.png" alt="histogram number of character"></p>
+<p><img src="http://iwoaf.com/content/images/2015/08/n_char-3.png" alt="histogram number of character"></p>
 
 <p>No surprise here for the histogram of the number of characters per messages. Majority of the messages are tiny, less than 15 characters. We also see that at least 10% of the messages contains 4 or less characters. Most of the time small messages are quickly sent and are more than enough! Those are mostly smileys, "yep", "hehe", "oui", "yes" and some lonely punctuations.</p>
 
 <p>Speaking of small words, it is funny to focus on our language of of laughter and lover. The following to pie charts perform a similar <a href="https://research.facebook.com/blog/1605690073053884/the-not-so-universal-language-of-laughter/">facebook</a> study of how we express laugh or love with instant messaging. For the laugh, our result slightly differ from the facebook one as the proportion of the "haha" are lower, and the one of the "lol" are bigger than expected. Facebook would qualified us as <em>hehe-er</em>. <br>
 In term of e-love, we mostly send "bisous" or "kisses", but some "cuddles" and "smacks" are also part of our e-love vocabulary.</p>
 
-<p><img src="http://0.0.0.0:2368/content/images/2015/08/e-laugh.png" alt="drawing" title=""><img src="http://0.0.0.0:2368/content/images/2015/08/e-love-2.png" alt="drawing" title=""></p>
+<p><img src="http://iwoaf.com/content/images/2015/08/e-laugh.png" alt="drawing" title=""><img src="http://iwoaf.com/content/images/2015/08/e-love-2.png" alt="drawing" title=""></p>
 
 <p>The following figure groups the messages by their hours and reports it as an histogram. Most of the messages are sent at the end of the day (6:00pm to midnight). Let's note that the time used by the log are the one from Paris and explains that almost no messages are sent between 1:00am and 7:00am as those hours are commonly used to sleep. Similarly no messages are exchange between 8:00pm and 1:00pm as it is also sleep time in Boston (6 hours of difference). </p>
 
-<p><img src="http://0.0.0.0:2368/content/images/2015/08/hist-hours-3.png" alt="histo hours"></p>
+<p><img src="http://iwoaf.com/content/images/2015/08/hist-hours-3.png" alt="histo hours"></p>
 
 <p>Here is a calendar with the number of messages shared for each day. The more red the day is, the more text were sent. Usually, less than 50 messages are sent each days. One this graph, we see blank days in August 2014, Christmas 2014, May 2015, and August 2015, those are obviously time spent together in real life !</p>
 
-<p><img src="http://0.0.0.0:2368/content/images/2015/08/calendar-day-1.png" alt="calendar plot log"></p>
+<p><img src="http://iwoaf.com/content/images/2015/08/calendar-day-1.png" alt="calendar plot log"></p>
 
 <p>Finally let's have a look at the most used words in the conversations. In the word cloud, the size of the word are a proxy for its frequency, the color groups the words with similar frequency. So purple is for the most used words, then in decreasing order we have green, blue, and red.  </p>
 
-<p><img src="http://0.0.0.0:2368/content/images/2015/08/wordcloudtt.png" alt=""></p>
+<p><img src="http://iwoaf.com/content/images/2015/08/wordcloudtt.png" alt=""></p>
 
 <p>As a bonus, here is the two personal wordcloud: </p>
 
-<p><img src="http://0.0.0.0:2368/content/images/2015/08/wordcloud-her-2.png" alt="drawing" title=""><img src="http://0.0.0.0:2368/content/images/2015/08/wordcloud-him-2.png" alt="drawing" title=""></p>
+<p><img src="http://iwoaf.com/content/images/2015/08/wordcloud-her-2.png" alt="drawing" title=""><img src="http://iwoaf.com/content/images/2015/08/wordcloud-him-2.png" alt="drawing" title=""></p>
 
-<p>The code that generates all the graphs are available on my <a href="https://github.com/aDrz/analysis-viber-logs">github</a>. However the csv file is not public for obvious reasons.</p>]]></content:encoded></item><item><title><![CDATA[old but still impressive]]></title><description><![CDATA[<p><a href="https://www.youtube.com/watch?v=cjAqR1zICA0">https://www.youtube.com/watch?v=cjAqR1zICA0</a></p>]]></description><link>http://0.0.0.0:2368/old-but-still-impressive/</link><guid isPermaLink="false">9582fb45-6020-4104-a4b5-9ef3075e038c</guid><category><![CDATA[external]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Fri, 01 May 2015 13:24:00 GMT</pubDate><content:encoded><![CDATA[<p><a href="https://www.youtube.com/watch?v=cjAqR1zICA0">https://www.youtube.com/watch?v=cjAqR1zICA0</a></p>]]></content:encoded></item><item><title><![CDATA[plot large time series with R]]></title><description><![CDATA[<p>Trying to plot a huge time series in R is messy. It takes ages to have the plot rendered and the saved pdf wants to eat my hard-disk.</p>
+<p>The code that generates all the graphs are available on my <a href="https://github.com/aDrz/analysis-viber-logs">github</a>. However the csv file is not public for obvious reasons.</p>]]></content:encoded></item><item><title><![CDATA[old but still impressive]]></title><description><![CDATA[<p><a href="https://www.youtube.com/watch?v=cjAqR1zICA0">https://www.youtube.com/watch?v=cjAqR1zICA0</a></p>]]></description><link>http://iwoaf.com/old-but-still-impressive/</link><guid isPermaLink="false">9582fb45-6020-4104-a4b5-9ef3075e038c</guid><category><![CDATA[external]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Fri, 01 May 2015 13:24:00 GMT</pubDate><content:encoded><![CDATA[<p><a href="https://www.youtube.com/watch?v=cjAqR1zICA0">https://www.youtube.com/watch?v=cjAqR1zICA0</a></p>]]></content:encoded></item><item><title><![CDATA[plot large time series with R]]></title><description><![CDATA[<p>Trying to plot a huge time series in R is messy. It takes ages to have the plot rendered and the saved pdf wants to eat my hard-disk.</p>
 
-<p>As our screen has limited number of pixels, we do not really need to plot all the data points. However a simple</p>]]></description><link>http://0.0.0.0:2368/plot-large-time-series-with-r/</link><guid isPermaLink="false">c652cb70-e4a4-4b2d-8f34-e22d6b41441d</guid><category><![CDATA[R]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Wed, 29 Apr 2015 13:21:00 GMT</pubDate><content:encoded><![CDATA[<p>Trying to plot a huge time series in R is messy. It takes ages to have the plot rendered and the saved pdf wants to eat my hard-disk.</p>
+<p>As our screen has limited number of pixels, we do not really need to plot all the data points. However a simple</p>]]></description><link>http://iwoaf.com/plot-large-time-series-with-r/</link><guid isPermaLink="false">c652cb70-e4a4-4b2d-8f34-e22d6b41441d</guid><category><![CDATA[R]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Wed, 29 Apr 2015 13:21:00 GMT</pubDate><content:encoded><![CDATA[<p>Trying to plot a huge time series in R is messy. It takes ages to have the plot rendered and the saved pdf wants to eat my hard-disk.</p>
 
 <p>As our screen has limited number of pixels, we do not really need to plot all the data points. However a simple downsampling (take a point each n points) does not fit my requirements as it remove high frequency content from the signal <a href="https://stat.ethz.ch/pipermail/r-help/2011-October/294004.html">link</a>.</p>
 
@@ -284,45 +284,45 @@ plot(data.compress)
 dev.off()  
 </code></pre>
 
-<p>Results in <a href="https://github.com/aDrz/adrz.github.io/raw/master/content/images/rplot.pdf">rplot.pdf</a> (2.1 Mo) and <a href="https://github.com/aDrz/adrz.github.io/raw/master/content/images/rplot-compress.pdf">rplot-compress.pdf</a> (16 Ko).</p>]]></content:encoded></item><item><title><![CDATA[50 years of avengers comic book covers though color]]></title><description><![CDATA[<p><a href="http://graphics.wsj.com/avengers">http://graphics.wsj.com/avengers</a></p>]]></description><link>http://0.0.0.0:2368/50-years-of-avengers-comic-book-covers-though-color/</link><guid isPermaLink="false">803bf360-f11c-4087-9e58-c8553cad0e3e</guid><category><![CDATA[external]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Wed, 22 Apr 2015 13:23:00 GMT</pubDate><content:encoded><![CDATA[<p><a href="http://graphics.wsj.com/avengers">http://graphics.wsj.com/avengers</a></p>]]></content:encoded></item><item><title><![CDATA[podcast about drinking, data-science and awesomeness]]></title><description><![CDATA[<p><a href="http://www.partiallyderivative.com/">http://www.partiallyderivative.com/</a></p>]]></description><link>http://0.0.0.0:2368/podcast-about-drinking-data-science-and-awesomeness/</link><guid isPermaLink="false">3d113dba-7621-4c9d-94eb-06d75498128f</guid><category><![CDATA[external]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Sat, 18 Apr 2015 13:20:00 GMT</pubDate><content:encoded><![CDATA[<p><a href="http://www.partiallyderivative.com/">http://www.partiallyderivative.com/</a></p>]]></content:encoded></item><item><title><![CDATA[my old movie gifs part 1/3]]></title><description><![CDATA[<p>I recently find my old movie gifs that I published in my preivous blog. It would be unfortunate to see them desappear. So here is my collection. Highly influenced by <a href="http://iwdrm.tumblr.com/">if we don't remember, me</a> and <a href="http://technoir.nl/">technoir</a></p>
+<p>Results in <a href="https://github.com/aDrz/adrz.github.io/raw/master/content/images/rplot.pdf">rplot.pdf</a> (2.1 Mo) and <a href="https://github.com/aDrz/adrz.github.io/raw/master/content/images/rplot-compress.pdf">rplot-compress.pdf</a> (16 Ko).</p>]]></content:encoded></item><item><title><![CDATA[50 years of avengers comic book covers though color]]></title><description><![CDATA[<p><a href="http://graphics.wsj.com/avengers">http://graphics.wsj.com/avengers</a></p>]]></description><link>http://iwoaf.com/50-years-of-avengers-comic-book-covers-though-color/</link><guid isPermaLink="false">803bf360-f11c-4087-9e58-c8553cad0e3e</guid><category><![CDATA[external]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Wed, 22 Apr 2015 13:23:00 GMT</pubDate><content:encoded><![CDATA[<p><a href="http://graphics.wsj.com/avengers">http://graphics.wsj.com/avengers</a></p>]]></content:encoded></item><item><title><![CDATA[podcast about drinking, data-science and awesomeness]]></title><description><![CDATA[<p><a href="http://www.partiallyderivative.com/">http://www.partiallyderivative.com/</a></p>]]></description><link>http://iwoaf.com/podcast-about-drinking-data-science-and-awesomeness/</link><guid isPermaLink="false">3d113dba-7621-4c9d-94eb-06d75498128f</guid><category><![CDATA[external]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Sat, 18 Apr 2015 13:20:00 GMT</pubDate><content:encoded><![CDATA[<p><a href="http://www.partiallyderivative.com/">http://www.partiallyderivative.com/</a></p>]]></content:encoded></item><item><title><![CDATA[my old movie gifs part 1/3]]></title><description><![CDATA[<p>I recently find my old movie gifs that I published in my preivous blog. It would be unfortunate to see them desappear. So here is my collection. Highly influenced by <a href="http://iwdrm.tumblr.com/">if we don't remember, me</a> and <a href="http://technoir.nl/">technoir</a></p>
 
 <p><strong>American Beauty</strong> (1999):</p><p> 
-<img src="http://0.0.0.0:2368/content/images/2015/08/americanbeauty.gif" alt="drawing"></p>
+<img src="http://iwoaf.com/content/images/2015/08/americanbeauty.gif" alt="drawing"></p>
 
 <p><strong>Beerfest</strong> (2006):</p><p> 
-<img src="http://0.0.0.0:2368/content/images/2015/08/beerfest_thumb.gif" alt="drawing"></p>
+<img src="http://iwoaf.com/content/images/2015/08/beerfest_thumb.gif" alt="drawing"></p>
 
 <p><strong>Chronicle</strong> (2012):</p><p> 
-<img src="http://0.0.0.0:2368/content/images/2015/08/chronicle_thumb.gif" alt="drawing"></p>
+<img src="http://iwoaf.com/content/images/2015/08/chronicle_thumb.gif" alt="drawing"></p>
 
 <p><strong>Night on Earth</strong> (1991):</p><p> 
-<img src="http://0.0.0.0:2368/content/images/2015/08/night_on_earth.gif" alt="drawing"></p>
+<img src="http://iwoaf.com/content/images/2015/08/night_on_earth.gif" alt="drawing"></p>
 
-<p><strong>Hugo</strong> (2011)</p>]]></description><link>http://0.0.0.0:2368/my-old-movie-gifs-part-13/</link><guid isPermaLink="false">1f05f39a-488c-4e4f-8670-4be5fd71e6f8</guid><category><![CDATA[gif]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Sat, 18 Apr 2015 13:19:00 GMT</pubDate><content:encoded><![CDATA[<p>I recently find my old movie gifs that I published in my preivous blog. It would be unfortunate to see them desappear. So here is my collection. Highly influenced by <a href="http://iwdrm.tumblr.com/">if we don't remember, me</a> and <a href="http://technoir.nl/">technoir</a></p>
+<p><strong>Hugo</strong> (2011)</p>]]></description><link>http://iwoaf.com/my-old-movie-gifs-part-13/</link><guid isPermaLink="false">1f05f39a-488c-4e4f-8670-4be5fd71e6f8</guid><category><![CDATA[gif]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Sat, 18 Apr 2015 13:19:00 GMT</pubDate><content:encoded><![CDATA[<p>I recently find my old movie gifs that I published in my preivous blog. It would be unfortunate to see them desappear. So here is my collection. Highly influenced by <a href="http://iwdrm.tumblr.com/">if we don't remember, me</a> and <a href="http://technoir.nl/">technoir</a></p>
 
 <p><strong>American Beauty</strong> (1999):</p><p> 
-<img src="http://0.0.0.0:2368/content/images/2015/08/americanbeauty.gif" alt="drawing"></p>
+<img src="http://iwoaf.com/content/images/2015/08/americanbeauty.gif" alt="drawing"></p>
 
 <p><strong>Beerfest</strong> (2006):</p><p> 
-<img src="http://0.0.0.0:2368/content/images/2015/08/beerfest_thumb.gif" alt="drawing"></p>
+<img src="http://iwoaf.com/content/images/2015/08/beerfest_thumb.gif" alt="drawing"></p>
 
 <p><strong>Chronicle</strong> (2012):</p><p> 
-<img src="http://0.0.0.0:2368/content/images/2015/08/chronicle_thumb.gif" alt="drawing"></p>
+<img src="http://iwoaf.com/content/images/2015/08/chronicle_thumb.gif" alt="drawing"></p>
 
 <p><strong>Night on Earth</strong> (1991):</p><p> 
-<img src="http://0.0.0.0:2368/content/images/2015/08/night_on_earth.gif" alt="drawing"></p>
+<img src="http://iwoaf.com/content/images/2015/08/night_on_earth.gif" alt="drawing"></p>
 
 <p><strong>Hugo</strong> (2011):</p><p> 
-<img src="http://0.0.0.0:2368/content/images/2015/08/hugo.gif" alt="drawing"></p>
+<img src="http://iwoaf.com/content/images/2015/08/hugo.gif" alt="drawing"></p>
 
 <p><strong>Breakfast at Tiffany's</strong> (1961):</p><p> 
-<img src="http://0.0.0.0:2368/content/images/2015/08/breakfastattiffanys.gif" alt="drawing"></p>]]></content:encoded></item><item><title><![CDATA[how fast does miles teller play in whiplash?]]></title><description><![CDATA[<div class="video-container">  
+<img src="http://iwoaf.com/content/images/2015/08/breakfastattiffanys.gif" alt="drawing"></p>]]></content:encoded></item><item><title><![CDATA[how fast does miles teller play in whiplash?]]></title><description><![CDATA[<div class="video-container">  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0IzlhHz6UKg" frameborder="0" allowfullscreen></iframe>  
 </div>
 
 <p><strong>EDIT 05 Sep. 2015</strong>: The concept of Beat Per Minutes (BPM) has been mis-understood as mentioned by <a href="https://www.reddit.com/r/dataisbeautiful/comments/3jqc8f/how_fast_does_miles_teller_drum_in_whiplash_oc/">reddit</a>. What I was supposed to write was Strokes Per Minutes  (SPM).</p>
 
-<p>Released in 2014, <a href="http://www.imdb.com/title/tt2582802/">Whiplash</a> focuses on a promising young drummer (Miles Teller) pursuing his dream of greatness. This greatness will only</p>]]></description><link>http://0.0.0.0:2368/how-fast-does-miles-teller-play-in-whiplash/</link><guid isPermaLink="false">d536f602-1fa6-40a8-9a79-e126ebaf2ae6</guid><category><![CDATA[movie]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Sat, 28 Mar 2015 13:18:34 GMT</pubDate><content:encoded><![CDATA[<div class="video-container">  
+<p>Released in 2014, <a href="http://www.imdb.com/title/tt2582802/">Whiplash</a> focuses on a promising young drummer (Miles Teller) pursuing his dream of greatness. This greatness will only</p>]]></description><link>http://iwoaf.com/how-fast-does-miles-teller-play-in-whiplash/</link><guid isPermaLink="false">d536f602-1fa6-40a8-9a79-e126ebaf2ae6</guid><category><![CDATA[movie]]></category><dc:creator><![CDATA[aDrz]]></dc:creator><pubDate>Sat, 28 Mar 2015 13:18:34 GMT</pubDate><content:encoded><![CDATA[<div class="video-container">  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0IzlhHz6UKg" frameborder="0" allowfullscreen></iframe>  
 </div>
 
@@ -334,26 +334,26 @@ dev.off()
 
 <p>The metric used is the Beat Per Minutes (BPM) which, in the case of the drum, simplified to how many times the drummer hits his instrument per minutes. This BPM is estimated by the detection of a short transient peaks in the audio signal then the difference of time between two consecutive peaks allows the computation of the <em>instantaneous BPM</em>. The two following figures shows the basic idea and problem behind the detection of these short peaks (beat) in an audio signal. The red dots represents a detection and the numbers between two consecutive dots are the <em>instantaneous BPM</em>. The first figure is an example of clear identifiable beats with an slightly increasing BPM (311 - 323 - 336 - 361 - ...). However the the second example exhibits the problem that arises when beats are pretty closed to each others leading to the end of a beat signal interfering with the beginning of the next one. So it makes the estimation of the <em>instantaneous BPM</em> harder and thus more noisy.</p>
 
-<p><img src="http://0.0.0.0:2368/content/images/2015/03/beat-detect-low.png" alt="xwf">
-<img src="http://0.0.0.0:2368/content/images/2015/03/beat-detect-high.png" alt="wfkj"></p>
+<p><img src="http://iwoaf.com/content/images/2015/03/beat-detect-low.png" alt="xwf">
+<img src="http://iwoaf.com/content/images/2015/03/beat-detect-high.png" alt="wfkj"></p>
 
 <p>Now let's see how the Miles performs in the first see of the movie. The x-axis is the number of the beats. For the first scene, around ~200 beats were detected <a href="https://www.youtube.com/watch?v=Gg9nx_q-XNs">video</a> (from 0:00 to ~0:33). For those who haven't seen the movie, in the first scene Miles starts playing and slowly accelerates the rhythm. The acceleration is clear on the graph, he starts with less that 100 beats per minutes and ends with ~900 beats per minutes.</p>
 
-<p><img src="http://0.0.0.0:2368/content/images/2015/03/bpm-whiplash-beginb-1.png" alt="whiplash-bpm-first-scene"></p>
+<p><img src="http://iwoaf.com/content/images/2015/03/bpm-whiplash-beginb-1.png" alt="whiplash-bpm-first-scene"></p>
 
 <p>The BPM of the final scene has also been studied (from 2:36 to 3:56 of the embedded video). On this scene, the algorithm probably missed few drum beats as even if Miles Teller is at his higher beat rate (end of the graph) some <em>instantaneous BPM</em> appears to be around 450 quite precisely half of what the other points concentrate at that moment (between 800 and 1000). I like how the evolution of the <em>instantaneous BPM</em> draws a V shape, with a regular decrease then an as regular increase. So to answer the title-question "how fast does miles teller play in whiplash?", I will answer with <strong>900 BPM</strong> (±25).</p>
 
-<p><img src="http://0.0.0.0:2368/content/images/2015/03/bpm-whiplash-end-1.png" alt="whiplash-bpm-last-scene"></p>
+<p><img src="http://iwoaf.com/content/images/2015/03/bpm-whiplash-end-1.png" alt="whiplash-bpm-last-scene"></p>
 
 <p>Truly fast in my opinion. But let's compared it with the actual world's fastest drummer. I confront the beat detection algorithm to the known world record of 1208 beat in one minute <a href="https://www.youtube.com/watch?v=Q9FrW-Wr-ds">video of the record</a>. The algorithm detects <strong>1211</strong> beats instead of <strong>1208</strong> !  The <em>instantaneous BPM</em> of this record is of interest as we see that the drummer varies between 1000 and 1700 over the whole one minute of the drum session. We might account this variation to both the algorithm and the drummer himself. However, he seems incredibly constant even if a linear regression tells us that he starts with a <em>instantaneous BPM</em> of <strong>1282</strong> (±26) and finishes with <strong>1193</strong> (±26).</p>
 
-<p><img src="http://0.0.0.0:2368/content/images/2015/03/bpm-wfd-1.png" alt="world-fastest-drummer-bpm"></p>
+<p><img src="http://iwoaf.com/content/images/2015/03/bpm-wfd-1.png" alt="world-fastest-drummer-bpm"></p>
 
 <p>And finally, let's look at the BPM of the <a href="https://www.youtube.com/watch?v=ZpknwYRp7uY">challenge</a> given by the World's Fastest Drummer to Miles Teller. He seems to rise up to <strong>1100</strong> BPM. <br>
 EDIT: The video has been deleted by Tom Grosset here is the <a href="https://www.reddit.com/r/toronto/comments/2y6mgt/from_toronto_i_hold_the_guinness_world_record_for/">reddit thread</a> to prove it once existed.</p>
 
 <p>But as Miles <a href="http://radio.com/2015/03/13/miles-teller-worlds-fastest-drummer-response/">said</a> “Why would you challenge a guy who played in some garage bands in Florida and has a fun time doing it? I don’t go for speed. It’s not a sprint for the Miles man.”</p>
 
-<p><img src="http://0.0.0.0:2368/content/images/2015/03/bpm-wfdchallenge.png" alt="world-fastest-drummer-bpm-challenge"></p>
+<p><img src="http://iwoaf.com/content/images/2015/03/bpm-wfdchallenge.png" alt="world-fastest-drummer-bpm-challenge"></p>
 
 <p>The code and the waveforms are available <a href="https://github.com/aDrz/whiplash-bpm">here</a>!</p>]]></content:encoded></item></channel></rss>
