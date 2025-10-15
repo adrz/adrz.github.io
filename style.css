@@ -1,0 +1,55 @@
+/* Basic styling for a dark theme, common on Twitch */
+body {
+    font-family: sans-serif;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+#app {
+    padding: 10px;
+}
+
+#player-stats {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+#farm-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates a 5-column grid */
+    gap: 5px;
+    max-width: 300px; /* A good width for a panel extension */
+}
+
+.plot {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.plot:hover {
+    background-color: #404040;
+}
+
+/* Different states for the plot */
+.plot.empty {
+    background-color: #654321; /* Brown for empty dirt */
+}
+
+.plot.planted {
+    background-color: #228B22; /* Green for a planted crop */
+}
+
+.plot.ready {
+    background-color: #FFD700; /* Gold for a ready-to-harvest crop */
+}
+
+#status-message {
+    margin-top: 15px;
+    color: #a9a9a9;
+}
